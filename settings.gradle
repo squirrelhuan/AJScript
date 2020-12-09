@@ -1,0 +1,8 @@
+rootProject.name='AJScript'
+include ':app',':quickdeveloplibrary',':qdlogger_library',':qdzxinglibrary',':qdRouter_library'
+
+//project (':quickdeveloplibrary').projectDir = new File('D:\\Android\\AndroidStudioProjects\\QuickDevelop\\quickdeveloplibrary')
+project (':quickdeveloplibrary').projectDir = new File('D:\\Android\\work\\QuickDevelop\\quickdeveloplibrary')
+project (':qdlogger_library').projectDir = new File('D:\\Android\\AndroidStudioProjects\\QDLogger\\qdlogger_library')
+project (':qdRouter_library').projectDir = new File('D:\\Android\\AndroidStudioProjects\\QuickRouter\\qdRouter_library')
+project (':qdzxinglibrary').projectDir = new File('D:\\Android\\AndroidStudioProjects\\QdZxing\\qdzxinglibrary')

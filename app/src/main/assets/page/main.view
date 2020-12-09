@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout  xmlns="poetry" orientation="vertical" width="-1" height="-1"><!--根元素-->
+    <lable  text="我是文章标题"/>
+    <lable text="我是文章标题1" />
+    <layout orientation="horizontal">
+        <image width="100" height="100" text="图片" src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1604213193560&amp;di=7ff7f33b4282f8bef867a8cd928c89f7&amp;imgtype=0&amp;src=http%3A%2F%2Fa0.att.hudong.com%2F12%2F65%2F01300000822039127122651680818.jpg"/>
+        <image width="200" height="200" text="图片2" src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1604211594873&amp;di=9100deb3acd8e6b8d85f8326ac416b0f&amp;imgtype=0&amp;src=http%3A%2F%2Fa4.att.hudong.com%2F52%2F35%2F01300000248079122537357453023.jpg"/>
+    </layout>
+
+    <layout  orientation="vertical">
+        <button id="btn01" text="按钮1" content="图片1" onclick="startNew()"/>
+    </layout>
+
+    <gridView row="5" column="3" backgroundColor="#ffff6000" backgroundImg="http:">
+        <image  x="0" y="0" w="1" h="1"  src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1604213193560&amp;di=7ff7f33b4282f8bef867a8cd928c89f7&amp;imgtype=0&amp;src=http%3A%2F%2Fa0.att.hudong.com%2F12%2F65%2F01300000822039127122651680818.jpg"/>
+        <image  x="1" y="0" w="2" h="1"  src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1604213193560&amp;di=7ff7f33b4282f8bef867a8cd928c89f7&amp;imgtype=0&amp;src=http%3A%2F%2Fa0.att.hudong.com%2F12%2F65%2F01300000822039127122651680818.jpg"/>
+        <image  x="0" y="1" w="2" h="2"  src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1604213193560&amp;di=7ff7f33b4282f8bef867a8cd928c89f7&amp;imgtype=0&amp;src=http%3A%2F%2Fa0.att.hudong.com%2F12%2F65%2F01300000822039127122651680818.jpg"/>
+        <image  x="2" y="2" w="1" h="1"  src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1604213193560&amp;di=7ff7f33b4282f8bef867a8cd928c89f7&amp;imgtype=0&amp;src=http%3A%2F%2Fa0.att.hudong.com%2F12%2F65%2F01300000822039127122651680818.jpg"/>
+        <image  x="2" y="1" w="1" h="2"  src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1604213193560&amp;di=7ff7f33b4282f8bef867a8cd928c89f7&amp;imgtype=0&amp;src=http%3A%2F%2Fa0.att.hudong.com%2F12%2F65%2F01300000822039127122651680818.jpg"/>
+
+    </gridView>
+
+</layout>

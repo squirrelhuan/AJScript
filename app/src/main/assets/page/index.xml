@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout height="match_parent" orientation="vertical" tag='v1'
+    width="match_parent">
+    <text gravity="center" height="wrap_content" id='13' margin="10" marginBottom="10"
+        marginLeft="" marginRight="" marginTop="" padding="30" paddingBottom="" paddingLeft=""
+        paddingRight="" paddingTop="" tag="text1" text='文本控件{{message}}{abc}{{title}}' textColor="#008B8B" width="match_parent" />
+
+    <layout  height="wrap_content" width="match_parent" gravity="bottom">
+        <input tag='input1' id='btn_01' hint='输入框111' height="120" width="0" weight="1" oninput="textChanged()"/>
+        <button click='click1()' id='btn_01' text='按钮1' />
+    </layout>
+    <layout  height="wrap_content" width="match_parent" gravity="bottom">
+        <button click='requestPermission()' text='权限申请' />
+        <button click='addViewTest()' id='btn_01' text='添加控件' />
+        <button click='alertDialog()' id='btn_01' text='弹窗' />
+        <button click='newPage()' id='btn_01' text='页面跳转' />
+    </layout>
+    <layout tag="layout_01" backgroundColor='#aabbcc' height="wrap_content" width="match_parent">
+        <img height="200" src='https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1607231744142&amp;di=4a5b3fe7368ddff55cb8166f0f030320&amp;imgtype=0&amp;src=http%3A%2F%2Fa0.att.hudong.com%2F31%2F96%2F01300000287245125056965117563.jpg' text='a标签'
+            width="200"/>
+    </layout>
+    <scroll >
+        <layout tag="layout_02" backgroundColor='#EEE8AA' height="match_parent" orientation="vertical"
+            width="match_parent">
+            <img height="300" src='https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1607231744142&amp;di=4a5b3fe7368ddff55cb8166f0f030320&amp;imgtype=0&amp;src=http%3A%2F%2Fa0.att.hudong.com%2F31%2F96%2F01300000287245125056965117563.jpg' text='a标签'
+                width="300" />
+            <img height="300" src='https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1607231744142&amp;di=4a5b3fe7368ddff55cb8166f0f030320&amp;imgtype=0&amp;src=http%3A%2F%2Fa0.att.hudong.com%2F31%2F96%2F01300000287245125056965117563.jpg' text='a标签'
+                width="300" />
+            <img height="300" src='https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1607231744142&amp;di=4a5b3fe7368ddff55cb8166f0f030320&amp;imgtype=0&amp;src=http%3A%2F%2Fa0.att.hudong.com%2F31%2F96%2F01300000287245125056965117563.jpg' text='a标签'
+                width="300" />
+            <img height="300" src='https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1607231744142&amp;di=4a5b3fe7368ddff55cb8166f0f030320&amp;imgtype=0&amp;src=http%3A%2F%2Fa0.att.hudong.com%2F31%2F96%2F01300000287245125056965117563.jpg' text='a标签'
+                width="300" />
+            <img height="300" src='https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1607231744142&amp;di=4a5b3fe7368ddff55cb8166f0f030320&amp;imgtype=0&amp;src=http%3A%2F%2Fa0.att.hudong.com%2F31%2F96%2F01300000287245125056965117563.jpg' text='a标签'
+                width="300" />
+            <img height="300" src='https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1607231744142&amp;di=4a5b3fe7368ddff55cb8166f0f030320&amp;imgtype=0&amp;src=http%3A%2F%2Fa0.att.hudong.com%2F31%2F96%2F01300000287245125056965117563.jpg' text='a标签'
+                width="300" />
+            <img height="300" src='https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1607231744142&amp;di=4a5b3fe7368ddff55cb8166f0f030320&amp;imgtype=0&amp;src=http%3A%2F%2Fa0.att.hudong.com%2F31%2F96%2F01300000287245125056965117563.jpg' text='a标签'
+                width="300" />
+            <img height="300" src='https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1607231744142&amp;di=4a5b3fe7368ddff55cb8166f0f030320&amp;imgtype=0&amp;src=http%3A%2F%2Fa0.att.hudong.com%2F31%2F96%2F01300000287245125056965117563.jpg' text='a标签'
+                width="300" />
+            <img height="300" src='https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1607231744142&amp;di=4a5b3fe7368ddff55cb8166f0f030320&amp;imgtype=0&amp;src=http%3A%2F%2Fa0.att.hudong.com%2F31%2F96%2F01300000287245125056965117563.jpg' text='a标签'
+                width="300" />
+            <img height="300" src='https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1607231744142&amp;di=4a5b3fe7368ddff55cb8166f0f030320&amp;imgtype=0&amp;src=http%3A%2F%2Fa0.att.hudong.com%2F31%2F96%2F01300000287245125056965117563.jpg' text='a标签'
+                width="300" />
+
+        </layout>
+    </scroll>
+</layout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"  ?>
+<layout height="match_parent" orientation="vertical" tag='v1' width="match_parent" xmlns:wx="http://www.w3.org/TR/html4/">
+    <text gravity="center" height="wrap_content" id='13' margin="10" marginBottom="10"
+        marginLeft="" marginRight="" marginTop="" padding="30" paddingBottom="" paddingLeft=""
+        paddingRight="" paddingTop="" tag="text1" text='文本内容' textColor="#008B8B" width="match_parent" />
+
+    <layout  height="wrap_content" width="match_parent" gravity="bottom">
+        <input tag='input1' id='btn_01' hint='输入框111' height="120" width="0" weight="1" oninput="textChanged()"/>
+        <button click='click1()' id='btn_01' text='按钮1' />
+    </layout>
+    <layout  height="wrap_content" width="match_parent" orientation="vertical" gravity="bottom">
+        <button click='alertDialog()' id='btn_01' text='弹窗' />
+        <button click='newPage()' id='btn_01' text='页面跳转' />
+    </layout>
+
+    <layout  height="wrap_content" width="match_parent" orientation="vertical" gravity="bottom">
+        <progress style="horizontal" id='btn_01' text='弹窗' />
+        <progress id='btn_01' text='页面跳转' />
+        <seekbar value='30' minValue='0' maxValue='100' text='页面跳转' onseek="progressChanged()"/>
+        <seekbar value='60' minValue='0' maxValue='100' text='页面跳转' />
+    </layout>
+
+   <!-- <layout wx:for="{{[1,2,3,4,5]}}">-->
+    <layout wx:for="{{buttons}}">
+        <text text="{{index}}" textColor="#008B8B" width="100" height="match_parent" gravity="center"/>
+        <button click='click1({{count}})' text='按钮{{item}}' />
+    </layout>
+
+</layout>
