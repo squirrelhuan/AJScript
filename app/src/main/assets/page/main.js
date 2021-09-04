@@ -5,8 +5,8 @@ var data = {
 }
 
 
-function click1(tag){
-    toast("点击了"+tag);
+function clickItem(tag,index){
+    toast("点击了"+index);
 }
 
 function textChanged(tag){

@@ -23,6 +23,7 @@ import org.mozilla.javascript.ScriptableObject;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.List;
 
 import cn.demomaster.ajscript.engine.rhino.RhinoJSEngine;
 import cn.demomaster.huan.quickdeveloplibrary.base.activity.QDActivity;
@@ -32,7 +33,6 @@ import cn.demomaster.huan.quickdeveloplibrary.util.xml.NodeElement;
 import cn.demomaster.huan.quickdeveloplibrary.view.banner.qdlayout.AjsLayoutInflater;
 import cn.demomaster.huan.quickdeveloplibrary.view.banner.qdlayout.Element;
 
-import static cn.demomaster.ajscript.fragment.TestFragment.getElement;
 import static cn.demomaster.huan.quickdeveloplibrary.view.banner.qdlayout.AjsLayoutInflater.generateLayout;
 
 public class MainActivity extends QDActivity {
@@ -101,6 +101,24 @@ public class MainActivity extends QDActivity {
         //QdToast.show(str3);
         RhinoJSEngine jsEngine = new RhinoJSEngine();
         jsEngine.runScript(testjs);
+    }
+
+    public static Element getElement(NodeElement nodeElement) {
+        Element myNodeElement = new Element();
+        myNodeElement.setTag(nodeElement.getNodeName());
+        List<NodeElement.NodeProperty> atts = nodeElement.getAttributes();
+        if (atts != null) {
+            for (int i = 0; i < atts.size(); i++) {
+                String attsQName = atts.get(i).getName();
+                String value = atts.get(i).getValue();
+                //QDLogger.i("元素: attsQName=" + attsQName + ",value=" + value);
+                myNodeElement.addProperty(attsQName, value);
+            }
+        }
+        for (NodeElement element1 : nodeElement.getChildNodes()) {
+            myNodeElement.addNode(getElement(element1));
+        }
+        return myNodeElement;
     }
 
     private String testjs ="var val = getValue('testKey');" +

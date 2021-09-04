@@ -23,7 +23,7 @@
    <!-- <layout wx:for="{{[1,2,3,4,5]}}">-->
     <layout wx:for="{{buttons}}">
         <text text="{{index}}" textColor="#008B8B" width="100" height="match_parent" gravity="center"/>
-        <button click='click1({{count}})' text='按钮{{item}}' />
+        <button click='clickItem({{index}})' text='按钮{{item}}' />
     </layout>
 
 </layout>

@@ -1,8 +1,17 @@
 rootProject.name='AJScript'
-include ':app',':quickdeveloplibrary',':qdlogger_library',':qdzxinglibrary',':qdRouter_library'
+include ':app',
+        ':quickdeveloplibrary',
+        ':qdlogger_library',
+        ':qdzxinglibrary',
+        ':qdRouter_library',
+        ':quickpermission_library',
+        ":quickdatabaselibrary",
+        ':quickjs_library'
 
 //project (':quickdeveloplibrary').projectDir = new File('D:\\Android\\AndroidStudioProjects\\QuickDevelop\\quickdeveloplibrary')
 project (':quickdeveloplibrary').projectDir = new File('D:\\Android\\work\\QuickDevelop\\quickdeveloplibrary')
 project (':qdlogger_library').projectDir = new File('D:\\Android\\AndroidStudioProjects\\QDLogger\\qdlogger_library')
 project (':qdRouter_library').projectDir = new File('D:\\Android\\AndroidStudioProjects\\QuickRouter\\qdRouter_library')
 project (':qdzxinglibrary').projectDir = new File('D:\\Android\\AndroidStudioProjects\\QdZxing\\qdzxinglibrary')
+project (':quickpermission_library').projectDir = new File('D:\\Android\\AndroidStudioProjects\\QuickPermission\\quickpermission_library')
+project(':quickdatabaselibrary').projectDir = new File('D:\\Android\\AndroidStudioProjects\\QuickDataBase\\quickdatabaselibrary')
